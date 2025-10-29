@@ -1,0 +1,9 @@
+#home {
+  min-height: 400px;
+  background-color: var(--selection);
+  color: white;
+}
+.home {
+  display: flex;
+  height: 100vh;
+}

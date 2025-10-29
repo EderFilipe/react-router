@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --foreground: #f8f8f2;
+  --blue: #8080ff;
+  --cyan: #80ffea;
+  --green: #8aff80;
+  --orange: #ffca80;
+  --pink: #ff80bf;
+  --purple: #9580ff;
+  --red: #ff9580;
+  --yellow: #ffff80;
+  --background: #22212c;
+  --comment: #7970a9;
+  --selection: #454158;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin-bottom: 0.6rem;
+}

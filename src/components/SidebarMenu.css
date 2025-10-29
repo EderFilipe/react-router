@@ -1,0 +1,89 @@
+/* Contêiner do menu lateral */
+.sidebar {
+  width: 60px;
+  flex-shrink: 0;
+  background-color: var(--background);
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+  position: relative;
+  height: 100vh; /* Ocupa a altura total da janela */
+  color: white;
+  z-index: 10; /* Garante que o menu apareça na frente dos outros elementos */
+}
+
+.sidebar.open {
+  width: 200px;
+}
+
+/* Botão hamburger */
+.hamburger {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 31px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 1rem auto;
+  position: absolute; /* Mude para absolute */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 11; /* Garante que o hamburger apareça na frente do menu */
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+/* Animação para transformar em X */
+.hamburger.open .line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-50%); /* Centraliza a linha ao desaparecer */
+}
+
+.hamburger.open .line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Links do menu */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 10px;
+  position: fixed; /* Fixo dentro do .sidebar */
+  top: 60px; /* Ajuste conforme necessário */
+  left: 10px; /* Ajuste conforme necessário */
+  z-index: 10; /* Garante que os links apareçam na frente dos outros elementos */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+nav a:hover {
+  color: var(--green);
+}
+
+.sidebar:not(.open) nav a {
+  text-indent: -9999px;
+}
+
+.active {
+  color: var(--green);
+}
