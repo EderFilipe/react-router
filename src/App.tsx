@@ -5,12 +5,15 @@ import Login from "./pages/Login";
 import Project from "./pages/Project";
 import AddProject from "./pages/AddProject";
 import NotFound from "./pages/NotFound";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/project:id" element={<Project />} />
+      <Route element={<Layout />} path="/">
+        <Route index element={<Home />} />
+        <Route path="project:id" element={<Project />} />
+      </Route>
 
       <Route path="/login" element={<Login />} />
       <Route path="/add-project" element={<AddProject />} />

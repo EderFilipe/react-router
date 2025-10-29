@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./SidebarMenu.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function SidebarMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ function SidebarMenu() {
       </button>
 
       <nav>
-        <Link to="/">Home</Link>
+        <NavLink to="/">Home</NavLink>
         <a href="#projetos">Projeto</a>
       </nav>
     </div>
