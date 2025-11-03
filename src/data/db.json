@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "email": "admin",
+      "password": ""
+    },
+    {
+      "email": "filipe",
+      "password": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "code-editor-pro",
+      "titulo": "Code Editor Pro",
+      "tags": ["JavaScript", "HTML", "CSS"],
+      "imagem": "https://dummyimage.com/150x150/000/fff",
+      "linkRepositorio": "https://github.com/exemplo/code-editor-pro",
+      "descricao": "Um editor de código avançado com suporte a múltiplas linguagens."
+    },
+    {
+      "id": "data-analyzer",
+      "titulo": "Data Analyzer",
+      "tags": ["Python", "SQL", "Pandas"],
+      "imagem": "https://dummyimage.com/150x150/000/fff",
+      "linkRepositorio": "https://github.com/exemplo/data-analyzer",
+      "descricao": "Ferramenta para análise e processamento de grandes conjuntos de dados."
+    },
+    {
+      "id": "game-realm",
+      "titulo": "Game Realm",
+      "tags": ["C#", "Unity", "VR"],
+      "imagem": "https://dummyimage.com/150x150/000/fff",
+      "linkRepositorio": "https://github.com/exemplo/game-realm",
+      "descricao": "Plataforma de jogos com suporte a realidade virtual."
+    },
+    {
+      "id": "mobile-sync",
+      "titulo": "Mobile Sync",
+      "tags": ["Java", "Android", "Kotlin"],
+      "imagem": "https://dummyimage.com/150x150/000/fff",
+      "linkRepositorio": "https://github.com/exemplo/mobile-sync",
+      "descricao": "Aplicativo para sincronização de dados entre dispositivos móveis."
+    },
+    {
+      "id": "web-optimizer",
+      "titulo": "Web Optimizer",
+      "tags": ["PHP", "Laravel", "MySQL"],
+      "imagem": "https://dummyimage.com/150x150/000/fff",
+      "linkRepositorio": "https://github.com/exemplo/web-optimizer",
+      "descricao": "Ferramenta para otimização e melhoria de performance de sites."
+    },
+    {
+      "id": "cloud-secure",
+      "titulo": "Cloud Secure",
+      "tags": ["Go", "Docker", "Kubernetes"],
+      "imagem": "https://dummyimage.com/150x150/000/fff",
+      "linkRepositorio": "https://github.com/exemplo/cloud-secure",
+      "descricao": "Solução de segurança para ambientes em nuvem."
+    }
+  ]
+}
