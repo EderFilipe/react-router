@@ -9,7 +9,7 @@ function Project() {
   console.log(project);
 
   return (
-    <div style={{ padding: "1 rem" }}>
+    <div style={{ padding: "1rem" }}>
       <h1>{project?.titulo}</h1>
       <p>{project?.descricao}</p>
       <img src={project?.imagem} alt="" />

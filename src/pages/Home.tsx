@@ -7,7 +7,7 @@ function Home() {
       <div className="wrapper" id="home">
         <h1>Home</h1>
       </div>
-      <ProjectList />
+        <ProjectList />
     </>
   );
 }

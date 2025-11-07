@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./SidebarMenu.css";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function SidebarMenu() {
   const [isOpen, setIsOpen] = useState(false);

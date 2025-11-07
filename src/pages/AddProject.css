@@ -1,0 +1,38 @@
+.add__project {
+  padding: 1rem;
+}
+
+.add__project form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.add__project form input,
+.add__project form textarea {
+  padding: 0.5rem;
+}
+
+.add__project form button {
+  padding: 1rem;
+  background-color: var(--green);
+  font-size: 1rem;
+  border: none;
+  transition: transform 0.1s, background-color 0.1s;
+}
+
+.add__project form button:hover {
+  background-color: rgb(59, 203, 46);
+  color: white;
+}
+
+.add__project form button:active {
+  transform: scale(0.98);
+}
+
+.message {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: var(--purple);
+}
