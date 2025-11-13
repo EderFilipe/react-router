@@ -1,21 +1,20 @@
 {
   "users": [
     {
-      "id": 1,
-      "email": "admin",
-      "password": ""
-    },
-    {
-      "id": 2,
-      "email": "filipe",
-      "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+      "email": "filipe12345@email.com",
+      "password": "$2a$10$cobZ.brq4Qni4YOz6fVGdOA1j3TK88a1gdvpHpdPrblG/tCaG22V6",
+      "id": 1
     }
   ],
   "projects": [
     {
       "id": "code-editor-pro",
       "titulo": "Code Editor Pro",
-      "tags": ["JavaScript", "HTML", "CSS"],
+      "tags": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
       "imagem": "https://dummyimage.com/150x150/000/fff",
       "linkRepositorio": "https://github.com/exemplo/code-editor-pro",
       "descricao": "Um editor de código avançado com suporte a múltiplas linguagens."
@@ -23,7 +22,11 @@
     {
       "id": "data-analyzer",
       "titulo": "Data Analyzer",
-      "tags": ["Python", "SQL", "Pandas"],
+      "tags": [
+        "Python",
+        "SQL",
+        "Pandas"
+      ],
       "imagem": "https://dummyimage.com/150x150/000/fff",
       "linkRepositorio": "https://github.com/exemplo/data-analyzer",
       "descricao": "Ferramenta para análise e processamento de grandes conjuntos de dados."
@@ -31,7 +34,11 @@
     {
       "id": "game-realm",
       "titulo": "Game Realm",
-      "tags": ["C#", "Unity", "VR"],
+      "tags": [
+        "C#",
+        "Unity",
+        "VR"
+      ],
       "imagem": "https://dummyimage.com/150x150/000/fff",
       "linkRepositorio": "https://github.com/exemplo/game-realm",
       "descricao": "Plataforma de jogos com suporte a realidade virtual."
@@ -39,7 +46,11 @@
     {
       "id": "mobile-sync",
       "titulo": "Mobile Sync",
-      "tags": ["Java", "Android", "Kotlin"],
+      "tags": [
+        "Java",
+        "Android",
+        "Kotlin"
+      ],
       "imagem": "https://dummyimage.com/150x150/000/fff",
       "linkRepositorio": "https://github.com/exemplo/mobile-sync",
       "descricao": "Aplicativo para sincronização de dados entre dispositivos móveis."
@@ -47,7 +58,11 @@
     {
       "id": "web-optimizer",
       "titulo": "Web Optimizer",
-      "tags": ["PHP", "Laravel", "MySQL"],
+      "tags": [
+        "PHP",
+        "Laravel",
+        "MySQL"
+      ],
       "imagem": "https://dummyimage.com/150x150/000/fff",
       "linkRepositorio": "https://github.com/exemplo/web-optimizer",
       "descricao": "Ferramenta para otimização e melhoria de performance de sites."
@@ -55,7 +70,11 @@
     {
       "id": "cloud-secure",
       "titulo": "Cloud Secure",
-      "tags": ["Go", "Docker", "Kubernetes"],
+      "tags": [
+        "Go",
+        "Docker",
+        "Kubernetes"
+      ],
       "imagem": "https://dummyimage.com/150x150/000/fff",
       "linkRepositorio": "https://github.com/exemplo/cloud-secure",
       "descricao": "Solução de segurança para ambientes em nuvem."

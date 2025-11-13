@@ -1,4 +1,4 @@
-import type { Project } from "../types";
+import type { Login, Project } from "../types";
 
 const API_URL = "http://localhost:5000";
 
@@ -9,18 +9,42 @@ export const fetchAllProjects = async () => {
 };
 
 export const addProject = async (newProject: Project) => {
+  const token = localStorage.getItem("token");
+
   const response = await fetch(`${API_URL}/projects`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
     },
     body: JSON.stringify(newProject),
   });
 
   if (!response.ok) {
+    const text = await response.text();
+    console.error("Erro na resposta da API:", text);
     throw new Error("Erro ao adicionar");
   }
 
   const project: Project = await response.json();
   return project;
+};
+
+export const auth = async (email: string, password: string) => {
+  const response = await fetch(`${API_URL}/login`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email,
+      password,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error("E-mail ou senha incorretos.");
+  }
+  const token:Login = await response.json();
+  return token.accessToken;
 };
