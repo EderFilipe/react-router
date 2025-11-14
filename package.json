@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "json-server --watch src/data/db.json --port 5000",
-    "server-auth": "json-server-auth --watch src/data/db.json --port 5000"
+    "server-auth": "json-server-auth --watch src/data/db.json --port 5000 -r src/data/routes.json"
   },
   "dependencies": {
     "crypto-js": "^4.2.0",

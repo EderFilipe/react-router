@@ -8,8 +8,9 @@ export const fetchAllProjects = async () => {
   return projects;
 };
 
+const token = localStorage.getItem("token");
+
 export const addProject = async (newProject: Project) => {
-  const token = localStorage.getItem("token");
 
   const response = await fetch(`${API_URL}/projects`, {
     method: "POST",
@@ -21,9 +22,7 @@ export const addProject = async (newProject: Project) => {
   });
 
   if (!response.ok) {
-    const text = await response.text();
-    console.error("Erro na resposta da API:", text);
-    throw new Error("Erro ao adicionar");
+    throw new Error("Erro ao adicionar um projeto");
   }
 
   const project: Project = await response.json();
@@ -46,5 +45,5 @@ export const auth = async (email: string, password: string) => {
     throw new Error("E-mail ou senha incorretos.");
   }
   const token:Login = await response.json();
-  return token.accessToken;
+  return token;
 };

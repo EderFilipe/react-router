@@ -78,6 +78,18 @@
       "imagem": "https://dummyimage.com/150x150/000/fff",
       "linkRepositorio": "https://github.com/exemplo/cloud-secure",
       "descricao": "Solução de segurança para ambientes em nuvem."
+    },
+    {
+      "id": "Exemplo projeto",
+      "titulo": "Exemplo projeto",
+      "tags": [
+        "JS",
+        "React",
+        "JSON"
+      ],
+      "imagem": "https://dummyimage.com/150x150/000/fff",
+      "linkRepositorio": "https://github.com/exemplo/projeto-exemplo2",
+      "descricao": "Projeto de exemplo."
     }
   ]
 }

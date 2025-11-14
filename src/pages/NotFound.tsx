@@ -8,7 +8,7 @@ const style:React.CSSProperties = { height: '100vh',
 
 function NotFound() {
   return (
-    <div style={ style }>Oops ... não encontrado</div>
+    <div style={ style }>Oops... não encontrado.</div>
   );
 }
 
